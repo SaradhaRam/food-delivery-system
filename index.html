@@ -1,0 +1,123 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Home page</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+			<div id="banner">
+				<p>
+					<img src="images/summer_sale.jpg" width="500" height="100" />
+					<button id="banner_btn" type="button">X</button>
+				</p>
+			</div>
+
+			<nav>
+				<div id="logo">
+					<a href="index.html">
+						<img src="images/logo.png"/>
+					</a>
+
+					<ul>
+						<li><a href="#">Sign-in</a></li>
+						<li>/</li>
+						<li><a href="Register.html">Register</a></li>
+						<li>/</li>
+						<li><a href="Request.html">Request</a></li>
+					</ul>
+				</div>
+
+			</nav>
+			<section id="foodbg-img">
+
+
+				<img src="images/backdrop_img.jpg" />	
+				<h1>Try a new meal today</h1>
+			</section>
+			<section>
+				<form method="post">
+					<div id="zip-sec">
+						<h2>Find a driver near you!</h2>
+						<p>Type in your zipcode below and click Go! to find a driver near you</p>
+						<label for="zipcode"></label>
+						<input id="zipcode" type="number" name="zipcode" maxlength="5" placeholder="zipcode"required>
+						<button type="submit" onclick="zip_checker(); return false;">Go</button>
+						<p id="zip_display" style="font-weight: bold"></p>
+					</div>
+				</form>
+
+			</section>
+
+			<!-- restaurant images -->
+			<section>
+			<div id="rest_head">
+				<h2 id="rest_heading">Feature Restaurants</h2>
+			</div>
+
+			<div class="restaurant_flex_container">
+				
+
+				<div class="flex_inner_container">
+					<img id="shrimp_img" src="images/shrimp.jpg" width="300" height="200"/>
+					<span id="span_15_perct_off"> Take 15% OFF Today! </span>
+					<h3>Oliver Garden</h3>
+					<p>Since 1990, Oliver Garden! has served the bay area with its palatable array of fried
+					 Shrimp and sailor's choice dessert.</p>
+					 <p>Order today and recieve 15% your total meal and we'll throw in our famous hush puppies
+					  as a thank you.</p>
+				</div>
+
+				<div class="flex_inner_container">
+					<img  id="samosa_img" src="images/samosa.jpg" width="300" height="200"/>
+					<span id="span_5_perct_off"> Take 5% OFF Today! </span>
+					<h3>Lemon Grace</h3>
+					<p>When you actually, really desire a Asian meal, you order from Lemon Grace. Unlike the fast food 
+					business, we eat our own food and love it.</p>
+					<p>Order 2 Entree' and get a dessert on us or Take 5% off Today.</p>
+				</div>
+
+				<div class="flex_inner_container">
+					<img  id="dessert_img" src="images/dessert.jpg" width="300" height="200"/>
+					<span id="span_10_perct_off"> Take 10% OFF Today! </span>
+					<h3>Yummm...Desserts</h3>
+					<p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, any meal. We know you don't need 
+					encouragement from us to eat our desserts. Look at the picture. You know you want it.</p>
+					<p>Just for you, we'll knock off 10% to make your wallet feel good too.</p>
+				</div>
+
+			</div>
+		</section>
+
+			<!--Footer -->  
+
+			<footer>
+		<div class="footer_row">
+			<div class="footer_column" id="footer_column_hover">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="about.html">How it all works</a></li>
+				</ul>
+			</div>
+			<div class="footer_column">
+				<ul>
+					<li>Privacy Policy</li>
+					<li>&#169 Terms and conditions</li>
+				</ul>
+			</div>
+
+			<div class="footer_column">
+				<ul>
+					<li>Lucky You!</li>
+				</ul>
+			</div>
+
+		</div>
+	</footer>
+
+ 	<script src="index.js"> </script> 
+
+	</body>
+	</html>

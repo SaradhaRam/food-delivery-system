@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Request</title>
+  <link rel ="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <header>
+  <nav>
+    <div id="logo" >
+      <a href="index.html">
+        <img src="images/logo.png"/>
+      </a>
+    </div>
+  </nav>  
+
+</header> 
+
+<form>
+
+  <div class="request_head">
+   <h1>Submit your Request </h1>
+   <p>Please fillout the form below.</p>
+ </div>
+
+ <div class="request_sub_head">
+  <label for="email">Address:</label>
+  <input id="email" type="email" name="email" size="25" placeholder="Email" required>
+  <p>Choose your style :</p>
+</div>
+
+<div class="request_flex_container">
+  <div class="flex"><p><span>Classic</span><br> This is a classic treatment.</p>
+    <input id="classic_rd_btn" type="radio" name="grp1" value="3"  onclick="update_base_price()" required>
+  </div>
+  
+  <div class="flex"> <p><span>Premium</span><br> Pinky's up.</p>
+    <input id="premium_rd_btn" type="radio" name="grp1" value="5"  onclick="update_base_price()" required>
+  </div>
+
+  <div class="flex"> <p><span>Royal</span> <br>Your food is served on a silver platter. Literally.</p>
+    <input id="royal_rd_btn" type="radio" name="grp1" value="10"   onclick="update_base_price()" required>
+  </div>
+</div>
+
+<!-- block -2 -->
+
+<div class="request_sub_head">
+  <label for="name">Restaurant:</label>
+  <input id="name" type="text" name="name" size="25" placeholder="Name" required>
+  <p>Tip:</p>
+</div>
+
+
+<div class="request_flex_container">
+  <div class="flex"><p><span>10%</span><br> They did their job</p>
+    <input id="tips_10_rd_btn" type="radio" name="grp2" value="0.1" onclick="total_display_price()" required>
+  </div>
+  
+  <div class="flex"> <p><span>15%</span><br> They made you feel special</p>
+    <input id="tips_15_rd_btn" type="radio" name="grp2" value="0.15" onclick="total_display_price()" required>
+  </div>
+
+  <div class="flex"> <p><span>20%</span> <br>I wanna give them more,but this is all I have!</p>
+    <input id="tips_20_rd_btn" type="radio" name="grp2" value="0.2" onclick="total_display_price()" required>
+  </div>
+</div>
+
+<div class="req_button">
+ <!--  <label>Total:</label>  -->
+ <p id="total_display" style="font-size: 22px">Total: $</p>
+ <button >Request</button> 
+
+</div> 
+</form>
+
+
+<footer>
+    <div class="footer_row">
+      <div class="footer_column" id="footer_column_hover">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="about.html">How it all works</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li>Privacy Policy</li>
+          <li>&#169 Terms and conditions</li>
+        </ul>
+      </div>
+
+      <div class="footer_column">
+        <ul>
+          <li>Lucky You!</li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+<script src="request.js"></script>
+
+</body>
+</html>
